@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: |
          echo "${{ secrets.DOCKER }}" | docker login -u "madhavkrishna118" --password-stdin
-         docker image build -t madhavkrishna118/dockergithub:v1 .
+         docker image build -t madhavkrishna118/dockergithub:v2 .
          docker push madhavkrishna118/dockergithub:v1
